@@ -30,7 +30,7 @@ from helpers.decorators import sudo_users_only
 
 
 # Stats Of Your Bot
-@Client.on_message(command("stats"))
+@Client.on_message(command("st"))
 @sudo_users_only
 async def botstats(_, message: Message):
     total, used, free = shutil.disk_usage(".")
